@@ -70,7 +70,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts season.to_s.capitalize! + ":"
     holidays.collect do |holiday, supplies| #holiday = individual holidays, supplies = array of supplies
     binding.pry
-      if holiday == :new_years || holiday == :fourth_of_july || holiday == :memorial_day #if holiday.include?("_")
+      if holiday == :new_years || holiday == :fourth_of_july || holiday == :memorial_day #if holiday.to_s.include?("_")
         holiday.to_s.split("_").each {|word| holiday_array << word}  #turn holiday from symbol to string, split the two words into separate strings, put into array
         holiday_array.each do |each_word| 
         # holiday_array.collect do |festivity, supply| 
