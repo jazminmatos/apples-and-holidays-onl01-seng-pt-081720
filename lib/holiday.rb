@@ -76,7 +76,6 @@ def all_supplies_in_holidays(holiday_hash)
           capitalized_words << each_word.capitalize!
         end
         puts "  " + capitalized_words.join(" ") + ": " + supplies.join(", ") 
-        #binding.pry
       else 
         puts "  " + holiday.to_s.capitalize! + ": " + supplies.join(", ")
       end
