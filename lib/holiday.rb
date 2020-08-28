@@ -71,7 +71,7 @@ def all_supplies_in_holidays(holiday_hash)
     holidays.collect do |holiday, supplies| #holiday = individual holidays, supplies = array of supplies
       if holiday == :new_years || holiday == :fourth_of_july || holiday == :memorial_day
         holiday_array << (holiday.to_s).split("_")  #turn holiday from symbol to string, split the two words into separate strings, put into array
-        holiday_array.collect do |festivity| 
+        holiday_array.collect do |festivity, supply| 
           capitalized_words << festivity.capitalize.join(" ") ####I DON'T UNDERSTAND WHY CAPITALIZE WON'T WOOOOORK!!!!!
         puts "  " + capitalized_words + ": " + supplies.join(", ") 
         end
