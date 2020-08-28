@@ -74,9 +74,9 @@ def all_supplies_in_holidays(holiday_hash)
         holiday_array.collect do |each_word| 
         # holiday_array.collect do |festivity, supply| 
           capitalized_words << each_word.capitalize 
-          binding.pry
         puts "  " + capitalized_words.join(" ") + ": " + supplies.join(", ") 
         end
+        binding.pry
       else 
         puts "  " + holiday.to_s.capitalize! + ": " + supplies.join(", ")
       end
