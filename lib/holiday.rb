@@ -94,10 +94,6 @@ end
     #.join array back into string
     
 
-
-
-###IGNORE BELOW, CORRECT ANSWER BELOW#########     REMOVE BEFORE SUBMITTING        #######################
-
 def all_holidays_with_bbq(holiday_hash)
   bbq_holiday = []
   holiday_hash.collect do |season, holidays|
