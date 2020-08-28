@@ -73,7 +73,7 @@ def all_supplies_in_holidays(holiday_hash)
         holiday_array << (holiday.to_s).split("_")  #turn holiday from symbol to string, split the two words into separate strings, put into array
         holiday_array.collect do |festivity, supply2| 
           capitalized_words << supply2.capitalize ####I DON'T UNDERSTAND WHY CAPITALIZE WON'T WOOOOORK!!!!!
-        puts "  " + capitalized_words + ": " + supplies.join(", ") 
+        puts "  " + capitalized_words.join(" ") + ": " + supplies.join(", ") 
         end
       else 
         puts "  " + holiday.to_s.capitalize! + ": " + supplies.join(", ")
