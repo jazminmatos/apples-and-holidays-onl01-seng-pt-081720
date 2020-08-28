@@ -71,7 +71,7 @@ def all_supplies_in_holidays(holiday_hash)
     holidays.collect do |holiday, supplies| #holiday = individual holidays, supplies = array of supplies
       if holiday == :new_years || holiday == :fourth_of_july || holiday == :memorial_day
         holiday.to_s.split("_").each {|word| holiday_array << word}  #turn holiday from symbol to string, split the two words into separate strings, put into array
-        holiday_array.collect do |festivity| 
+        holiday_array.collect do |each_word| 
         # holiday_array.collect do |festivity, supply| 
           # capitalized_words << supply.capitalize 
           binding.pry
