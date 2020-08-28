@@ -60,7 +60,6 @@ def all_winter_holiday_supplies(holiday_hash)
   all_supplies.flatten
 end
 
-
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.collect do |season, holidays| #season = individual seasons, holidays = hash of one season's holidays
     capitalized_words = []
