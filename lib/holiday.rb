@@ -90,7 +90,6 @@ end
     #iterate over that array to .capitalize! each word
     #.join array back into string
     
-
 def all_holidays_with_bbq(holiday_hash)
   bbq_holiday = []
   holiday_hash.collect do |season, holidays|
